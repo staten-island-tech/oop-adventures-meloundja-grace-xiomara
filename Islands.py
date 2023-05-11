@@ -18,17 +18,10 @@ island3 = Island('Lost Souls Springs', 'Small Island', '20 Days to Travel', '')
 
 
 island_pick = input("You are presented with these two islands to travel to. Would you like to see the information?")
-if island_pick == 'Yes' or 'Y' or 'yes':
-        print(island2)
-        print(island3)
-        pick = input('Are you ready to choose now?')
-        if pick == 'Yes' or 'Y' or 'yes':
-            print('Alright... Make your choice.')
-        if pick == 'no' or 'No' or 'N':
-            print('Please, take some time to decide....')
-        else:
-            print("error")
-elif island_pick == 'no' or 'No' or 'N':
-        print('Alright... Make your choice.')
-else: 
-        print('error')
+pick = island_pick
+while island_pick == 'yes' or 'Yes' or 'Y':
+    print(island2)
+    print(island3)
+    choice = input("Are you ready to choose now?")
+    if choice == 'yes' or 'Yes' or 'Y':
+        print('Alright. Make your choice now....')
