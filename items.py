@@ -1,3 +1,9 @@
+answer = input("are you ready for your first choice?")
+if answer.lower().strip() == "yes":
+    print("Great!")
+else:
+    print("too bad, you're still choosing.")
+
 class item():
     def __init__(self, name, cost):
         self.name = name
@@ -25,3 +31,5 @@ print(food)
 
 potion = Potion("HPotion", "50 Gold Coins", "Hunger", "Description: A mysterious potion that appears to be able to relieve hunger. You can see a tag on it that says 'PROPERTY OF BLACK MARKET'.")
 print (potion)
+
+choice = input("which will you choose?")
