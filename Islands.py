@@ -25,8 +25,12 @@ if island_pick == 'yes':
     choice = input("Are you ready to choose now?")
     if choice == 'yes':
         print('Alright. Make your choice now....')
+        print("Type anything to continue")
+        next_choice = input()
     elif choice == 'no':
         print('Alright, take some time to decide')
+        print("Type anything to continue")
+        next_choice = input()
     else:
         print('error')
 
@@ -37,6 +41,8 @@ elif island_pick == 'no':
     choose = input()
     if choose == 'yes':
         print('Alright. Please, make a choice now...')
+        print("Type anything to continue")
+        next_choice = input()
     elif choose == 'no':
         print("So, would you like to see the island descriptions")
         choose2 = input()
@@ -44,6 +50,8 @@ elif island_pick == 'no':
             print(island2)
             print(island3)
             print('Make your choice now, please. Your decision awaits.')
+            print("Type anything to continue")
+            next_choice = input()
         elif choose2 == 'no':
             print("....")
             print("....")
@@ -53,7 +61,23 @@ elif island_pick == 'no':
             print("....")
             print("....")
             print("That was your last chance to see the island options. Make a choice now if you will")
+            print("Type anything to continue")
+            next_choice = input()
 
 
 else:
     print('error')
+
+
+
+for i in next_choice:
+    print("Alright, your decision awaits.")
+    print("Please choose between Island 2 or Island 3. Type 2 for Island 2 and 3 for Island 3")
+    island_choice_omg = input()
+    if island_choice_omg == "2":
+        print("You have chosen Island 2")
+    elif island_choice_omg == "3":
+        print("You have chosen Island 3")
+    else:
+        print("error. type anything to redo")
+        next_choice = ()
