@@ -72,12 +72,11 @@ else:
 
 for i in next_choice:
     print("Alright, your decision awaits.")
-    print("Please choose between Island 2 or Island 3. Type 2 for Island 2 and 3 for Island 3")
+    print("Please choose between Island 2 or Island 3. Type 'two' for Island 2 and 'three for Island 3")
     island_choice_omg = input()
-    if island_choice_omg == "2":
-        print("You have chosen Island 2")
-    elif island_choice_omg == "3":
-        print("You have chosen Island 3")
-    else:
-        print("error. type anything to redo")
-        next_choice = ()
+
+if island_choice_omg == "two":
+    print("You have chosen Island 2")
+
+if island_choice_omg == "three":
+    print("You have chosen Island 3")
