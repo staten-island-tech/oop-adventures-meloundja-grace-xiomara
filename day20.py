@@ -12,7 +12,7 @@ chest_view = input()
 if chest_view == 'yes':
     print("Omg!! LOOK AT THIS!! ")
     print("This treasure chest contains many gold coins!!")
-    print("This is worth 1000 gold coins! Can you believe it (...) ")
+    print("This is worth 1000 gold coins! Can you believe it?! (...) ")
     print("ANYWAYS!! This chest is similar to what you have been looking for your whole journey!")
     print("Would you like to continue take this with you and end your journey right here? Or would you rather donate it to charity!? Im sure many people could use this much gold coins. The choice is yours!")
     print("Type anything to continue")
@@ -32,4 +32,15 @@ elif chest_view == 'no':
         choice_agn = input()
         if choice_agn == 'yes':
             print("Okay.")
-            
+            print("Omg!! LOOK AT THIS!! ")
+            print("This treasure chest contains many gold coins!!")
+            print("This is worth 1000 gold coins! Can you believe it?! (...) ")
+            print("ANYWAYS!! This chest is similar to what you have been looking for your whole journey!")
+            print("Would you like to continue take this with you and end your journey right here? Or would you rather donate it to charity!? Im sure many people could use this much gold coins. The choice is yours!")
+            print("Type anything to continue")
+            ulitmate_choice = ()
+
+
+for i in ulitmate_choice:
+    print()
+    

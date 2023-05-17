@@ -1,3 +1,5 @@
+#Day 10 .....      :|   '__'
+
 class Area():
     def __init__(self, name, size):
         self.name = name
@@ -37,7 +39,7 @@ if island_pick == 'yes':
 
 elif island_pick == 'no':
     print("Are you sure you do not want to see the descriptions for these islands?")
-    print("This is your last chance to make a descision")
+    print("This is your last chance to make a decision")
     choose = input()
     if choose == 'yes':
         print('Alright. Please, make a choice now...')
@@ -70,13 +72,18 @@ else:
 
 
 
-for i in next_choice:
-    print("Alright, your decision awaits.")
-    print("Please choose between Island 2 or Island 3. Type 'two' for Island 2 and 'three for Island 3")
-    island_choice_omg = input()
+for x in next_choice: 
+    print()
+ 
 
-if island_choice_omg == "two":
+print("Alright, your decision awaits.")
+print("Please choose between Island 2 or Island 3. Type '2' for Island 2 and '3' for Island 3")
+island_choice_omg = input()
+if island_choice_omg == '2':
     print("You have chosen Island 2")
 
-if island_choice_omg == "three":
+elif island_choice_omg == '3':
     print("You have chosen Island 3")
+
+else:
+    print('error')
