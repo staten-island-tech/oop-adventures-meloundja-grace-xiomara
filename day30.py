@@ -22,6 +22,6 @@ elif read_letter == 'nah':
         print('Thanks for playing. BYE BYE!!!')
 
 else:
-        print('not a choice. take this game seriously and put in the right choice')
+        print('not a choice. take this game seriously and put in the right choice by reading the instructions')
 
 
