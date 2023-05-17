@@ -5,9 +5,11 @@ print("you must choose between giving up ownership of either you gold coins or y
 choice = input("what are you willing on giving up? gold coins or items?")
 
 if choice == "gold coins":
-    print("unfourtnly this island is a death senctance, lack of coins gureentee death")
+    print("unfourtnly this island is a death senctance, lack of coins or items gureentee death")
 
 elif choice == "items":
-    print("unfourtnly this island is a death senctance, lack of items gureentee death")
+    print("unfourtnly this island is a death senctance, lack of items or coins gureentee death")
+
+print("game over")
 
     

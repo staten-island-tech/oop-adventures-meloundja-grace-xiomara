@@ -33,3 +33,10 @@ potion = Potion("HPotion", "50 Gold Coins", "Hunger", "Description: A mysterious
 print (potion)
 
 choice = input("which will you choose?")
+
+if choice == food:
+    print(100-90)
+    print("you now have 10 coins remining")
+
+elif choice == potion:
+    print(100-50)
