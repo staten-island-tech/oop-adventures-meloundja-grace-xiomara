@@ -13,17 +13,17 @@ class Merchant(Charater):
         self.name = name 
         self.coins = coins  
         self.impression = impression
-    def __str__(self):
-        return f"{self.name}, {self.coins}, {self.impression}"
+ 
     
-def show(self):
-        print("You've ran into a", self.name, "and his amount of coins is", self.coins, "he comes off as", self.impression)
+        print("You've ran into a",self.name,"and his amount of coins is", self.coins, "he comes off as", self.impression)
 
 
 name = "Old Merchant"
 impression = "suspicious"
 
 m = Merchant(name, 0, impression)
+print(m)
+
 
 
 
