@@ -39,34 +39,47 @@ elif chest_view == 'no':
             print("Would you like to continue take this with you and end your journey right here? Or would you rather donate it to charity!? Im sure many people could use this much gold coins. The choice is yours!")
             print("Type anything to continue")
             ulitmate_choice = ()
+        if choice_agn == 'no':
+            print('.....')
+            print('ok whatever...')
+            print('Do you want to take it or not')
+        else:
+            print('error')
+    else:
+        print('error')
 
 else:
     print('Error.')
 
 
-if '' in ulitmate_choice:
+
+ulitmate_choice = input()
+for i in ulitmate_choice:
     print()
-    print("Do you want to take this treasure chest with you? Or would you like to donate it to charity?")
-    print("T for Treasure Chest annd C to donate to charity.")
-    supr_chiice = input()
-    if supr_chiice == 'T':
-        print('You chose to open the treasure chest')
-    elif supr_chiice == 'C':
-        print('You have chose to donate to charity')
-    else:
-        print('Error')
+print("Do you want to take this treasure chest with you? Or would you like to donate it to charity?")
+print("T for Treasure Chest annd C to donate to charity.")
+supr_chiice = input()
+if supr_chiice == 'T':
+    print('You chose to open the treasure chest')
+elif supr_chiice == 'C':
+    print('You have chose to donate to charity')
+else:
+    print('Error')
+    
 
 
 
-
-if '' in anther_ultimte_chpice:
+anther_ultimte_chpice = input()
+for i in anther_ultimte_chpice:
     print()
-    print("Are you going to continue on your journey? You will abandon the chest.")
-    mega_choice = input()
-    if mega_choice == 'yes':
-        print("Alright. You proceed on your journey. Good luck on your travels!!")
-    elif mega_choice == 'no':
-        print("Too bad you're going anyways.")
-    else:
-        print('Error')
+print("Are you going to continue on your journey? You will abandon the chest.")
+mega_choice = input()
+if mega_choice == 'yes':
+    print("Alright. You proceed on your journey. Good luck on your travels!!")
+elif mega_choice == 'no':
+    print("Too bad you're going anyways.")
+else:
+    print('Error')
+    
+
 
