@@ -22,9 +22,19 @@ name = "Old Merchant"
 impression = "suspicious"
 
 m = Merchant(name, 0, impression)
-print(m)
 
+print("The merchant promises to gain you accses to the island in four days, do you belive him?")
 
+choice = input("Do you agree?")
+
+if choice == "yes" or "Y" or "y":
+    print("you've made a horrible choice, you've been tricked and now you'll die")
+
+elif choice == "no" or "N" or "n":
+    print("Congrats, he is a horribble trickster and you've just avoided death!")
+
+else:
+    print("error")
 
 
 

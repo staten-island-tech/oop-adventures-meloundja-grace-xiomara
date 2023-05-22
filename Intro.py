@@ -12,7 +12,7 @@ else:
 
 
 
-class Traveler:
+class Charater():
     def __init__ (self, name, coins):
         self.name = name 
         self.coins = coins
@@ -22,7 +22,7 @@ class Traveler:
 
 name = input("what is your name?")
 
-User = Traveler(name, 100)
+User = Charater(name, 100)
 User.show()
 
    
@@ -31,3 +31,5 @@ if answer.lower().strip() == "yes":
     print("Great!")
 else:
     print("too bad, you're still choosing.")
+
+input("Would yo wish ")
