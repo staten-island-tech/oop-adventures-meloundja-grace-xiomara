@@ -19,7 +19,7 @@ if option == 'meat':
 
 
 
-elif option == 'potion':
+elif option == 'potion' :
     print('cost is 50 gold coins')
     choice = input('do you still want to purchase this item?')
     if choice == 'yes':
@@ -27,7 +27,7 @@ elif option == 'potion':
     elif choice == 'no':
         print('Okay do you want meat instead?')
         choice = input()
-        if choice == 'yes':
+        if choice == 'yessir':
             print('okay you hve 10 coins left and continued on your journey ')
         elif choice == 'no':
             print('thank you for visiting but unforunately you will die due to stravation on your adventure')
@@ -37,7 +37,7 @@ else:
     print('not in stock')
 
 
-if option == 'meat' or '':
+if option == 'meat' or 'yes1':
     print('This is day 5 and it is time to make a new decision. Do you want to eat the meat you bought? If you do not eat now then you will be eliminated. type yes to eat. Type no to die')
     choice = input()
     if choice == 'yes':
@@ -46,7 +46,7 @@ if option == 'meat' or '':
         print('You have straved to death and died. YOUR JOURNEY ENDS')
 
 
-elif option == 'potion':
+elif option == 'potion' :
     print('This is day 5 and it is time to make a new decision. Do you want to use the potion you bought? If you do not eat now then you will be eliminated. type yes to eat. Type no to die')
     choice = input()
     if choice == 'yes':
