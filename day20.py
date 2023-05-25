@@ -12,8 +12,10 @@ def CT_Game ():
         supr_chiice = input()
         if supr_chiice == 'T':
             print('You chose to open the treasure chest')
+            TAKE_ALL()
         elif supr_chiice == 'C':
             print('You have chose to donate to charity')
+            CHARITY_W ()
         else:
             print('Error')
     else:
@@ -38,6 +40,46 @@ def Continue_Gmae():
     else: 
         print('Error')
         
+
+def CHARITY_W ():
+    print("OMG SO U HAVE CHSOEN TO DONATE TO CHARITY???")
+    print("That is so kind of you!! Lets see what your fate will be.... ")
+    #add slep thing
+    print(" Because you have chosen to donate to charity, the king and queen were impressed by your generosity. ")
+    print("As a result... they have chosen to give you 1000000 gold coins")
+    print("CONGRATSS YOU HAVE ACHIEVED THE BEST ENDING IN THIS GAME!!")
+    print("END")
+
+def TAKE_ALL(): 
+    print("SO U HAVE CHOSEN TO TAKE THIS TREASURE FOR YOURSELF???")
+    print("That is..... interesting ")
+    print("Lets see what fate has in store for you.....")
+    print("You end your journey after taking the treasure chest with you")
+    print("You wonder what your life would be like after this...")
+    print("Type N to go to the next scene or E to end it right now (You will not see the afterword)")
+    scene_choice = input()
+    if scene_choice == "N":
+        B_ED()
+    elif scene_choice == "E":
+        FIN()
+
+def B_ED(): 
+    print("After taking the treasure chest, you make your way back home")
+    print("After that long and hard journey, you finally have something to get by wih: those 1,000 coins")
+    print("Finally,....")
+    #add time thing
+    print("You pass away due to the shortage in coins.")
+    print("Maybe those coins weren't enough to maintain yourself, but atleast you died knowing you achieved something, right? ")
+    print("Farewell, traveller.... You did an amaizing job, but all stories come to an end.")
+    print("END.")
+
+
+def FIN():
+    print("Thank you for playing our game. You may not know what happened afer you got the trasure chest....")
+    print("But you will achieved something in this long and hard journey.")
+    print("Congrats!!!")
+    print("FIN/ END")
+    
 ###
 
 print("Congrats! You have made it THIS far!!!!")
@@ -99,7 +141,9 @@ def CT_Game():
         supr_chiice = input()
         if supr_chiice == 'T':
             print('You chose to open the treasure chest')
+            TAKE_ALL()
         elif supr_chiice == 'C':
+            CHARITY_W ()
             print('You have chose to donate to charity')
         else:
             print('Error')
@@ -136,5 +180,31 @@ def CHARITY_W ():
     print("END")
 
 def TAKE_ALL(): 
-    print("SO U HAVE CHOSE TO TAKE THIS TREASURE FOR YOURSELF???")
+    print("SO U HAVE CHOSEN TO TAKE THIS TREASURE FOR YOURSELF???")
     print("That is..... interesting ")
+    print("Lets see what fate has in store for you.....")
+    print("You end your journey after taking the treasure chest with you")
+    print("You wonder what your life would be like after this...")
+    print("Type N to go to the next scene or E to end it right now (You will not see the afterword)")
+    scene_choice = input()
+    if scene_choice == "N":
+        B_ED()
+    elif scene_choice == "E":
+        FIN
+
+def B_ED(): 
+    print("After taking the treasure chest, you make your way back home")
+    print("After that long and hard journey, you finally have something to get by wih: those 1,000 coins")
+    print("Finally,....")
+    #add time thing
+    print("You pass away due to the shortage in coins.")
+    print("Maybe those coins weren't enough to maintain yourself, but atleast you died knowing you achieved something, right? ")
+    print("Farewell, traveller.... You did an amaizing job, but all stories come to an end.")
+    print("END.")
+
+
+def FIN():
+    print("Thank you for playing our game. You may not know what happened afer you got the trasure chest....")
+    print("But you will achieved something in this long and hard journey.")
+    print("Congrats!!!")
+    print("FIN/ END")
