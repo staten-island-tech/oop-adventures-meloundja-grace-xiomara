@@ -33,33 +33,15 @@ if answer2.lower().strip() == "yes":
    
 else:
     print("Oh well, farewell dear traveler")
-print ("Welcome dear traveler")
 
-
-answer = input("Would you like to embark on this journey? (yes/no)" )
-if answer.lower().strip() == "yes":
-    print("Whoopy")
-    time.sleep(t)
-    print("You have twenty five days to make to the Kingdom benevolent falls, or your your treasure will forever be lost.")
-    time.sleep(t2)
-    print("Within these twenty five days, you'll be tasked with different choices in which will either get you to your destination or you will unfortunately be eliminated")
-    time.sleep(t2)
-    print('remember to read each dialogue carefully, so you do not put in the wrong choice')
-elif answer.lower().strip() == "no":
-    print('goodbye')
 
 
    
-answer2 = input("are you ready for your first choice?")
-if answer2.lower().strip() == "yes":
-    print("Ok, you are in the land of the beginning, which is where your journey starts. Unfortunately, due to your terrible luck, you are broke. Your goal is to find the treasure hidden inside the Kingdom of benevolent falls through a bunch of decisions and some might be deemed fatal.   ")
-    time.sleep(t2)
+
     #AD SOETHING HERE TATH CONECTS TO THE EXT DAY 
 
 
    
-else:
-    print("Oh well, farewell dear traveler")
 
 #food decision/day 5
 
