@@ -1,8 +1,8 @@
 #Rage the Treasure
 
 import time
-t = 1.5
-t2 = 2.5
+t = 1
+t2 = 2
 time.sleep(t)
 
 
@@ -17,15 +17,16 @@ def first_choice():
         x = True
         while x == True:
             q = input("Would you like to continue? Y/N: ")
-            if (q=="No" or q=="N" or q=="n" or q=="no"):
+            if (q=="Yes" or q=="Y" or q=="yes" or q=="y"):
                 x = False
-                break
+                return first_choice()
 
 
 
     
 
     #AD SOETHING HERE TATH CONECTS TO THE EXT DAY 
+    #added :)
 
 
    
@@ -132,10 +133,12 @@ def islnchoice_s():
         choice = input("Are you ready to choose now?")
         if choice == 'yes':
             print('Alright. Make your choice now....')
+            time.sleep(t)
             print("Type anything to continue")
             next_choice = input()
         elif choice == 'no':
             print('Alright, take some time to decide')
+            time.sleep(t)
             print("Type anything to continue")
             next_choice = input()
         else:
@@ -152,10 +155,12 @@ def islnchoice_s():
 
     elif island_pick == 'no':
         print("Are you sure you do not want to see the descriptions for these islands?")
+        time.sleep(t)
         print("This is your last chance to make a decision")
         choose = input()
         if choose == 'yes':
             print('Alright. Please, make a choice now...')
+            time.sleep(t)
             print("Type anything to continue")
             next_choice = input()
         elif choose == 'no':
@@ -165,17 +170,26 @@ def islnchoice_s():
                 print(island2)
                 print(island3)
                 print('Make your choice now, please. Your decision awaits.')
+                time.sleep(t)
                 print("Type anything to continue")
                 next_choice = input()
             elif choose2 == 'no':
                 print("....")
+                time.sleep(t)
                 print("....")
+                time.sleep(t)
                 print("....")
+                time.sleep(t)
                 print("....")
+                time.sleep(t)
                 print("....")
+                time.sleep(t)
                 print("....")
+                time.sleep(t)
                 print("....")
+                time.sleep(t)
                 print("That was your last chance to see the island options. Make a choice now if you will")
+                time.sleep(t)
                 print("Type anything to continue")
                 next_choice = input()
 
@@ -193,6 +207,7 @@ def islnchoice_s():
 
 
     print("Alright, your decision awaits.")
+    time.sleep(t)
     print("Please choose between Island 2 or Island 3. Type '2' for Island 2 and '3' for Island 3")
     island_choice_omg = input()
     if island_choice_omg == '2':
@@ -212,7 +227,9 @@ def islnchoice_s():
 #Day15
 def day15fnl2():
     print("congrats dear traveler, you've made it to day 15 and you have chosen island 2!")
-    print("an important choice awaits, choose wisly...")
+    time.sleep(t)
+    print("an important choice awaits, choose wisely...")
+    time.sleep(t)
     print("you must choose between giving up ownership of either you gold coins or your items")
 
 
@@ -295,6 +312,7 @@ def DAY_20():
         if ulitmate_choice == "K":
             print('')
             print("Do you want to take this treasure chest with you? Or would you like to donate it to charity?")
+            time.sleep(t)
             print("T for Treasure Chest annd C to donate to charity.")
             supr_chiice = input()
             if supr_chiice == 'T':
@@ -335,20 +353,30 @@ def DAY_20():
 
     def CHARITY_W ():
         print("OMG SO U HAVE CHSOEN TO DONATE TO CHARITY???")
+        time.sleep(t)
         print("That is so kind of you!! Lets see what your fate will be.... ")
+        time.sleep(t2)
         #add slep thing
         print(" Because you have chosen to donate to charity, the king and queen were impressed by your generosity. ")
+        time.sleep(t)
         print("As a result... they have chosen to give you 1000000 gold coins")
+        time.sleep(t)
         print("CONGRATSS YOU HAVE ACHIEVED THE BEST ENDING IN THIS GAME!!")
+        time.sleep(t)
         print("END")
 
 
     def TAKE_ALL():
         print("SO U HAVE CHOSEN TO TAKE THIS TREASURE FOR YOURSELF???")
+        time.sleep(t)
         print("That is..... interesting ")
+        time.sleep(t2)
         print("Lets see what fate has in store for you.....")
+        time.sleep(t2)
         print("You end your journey after taking the treasure chest with you")
+        time.sleep(t)
         print("You wonder what your life would be like after this...")
+        time.sleep(t)
         print("Type N to go to the next scene or E to end it right now (You will not see the afterword)")
         scene_choice = input()
         if scene_choice == "N":
@@ -359,12 +387,18 @@ def DAY_20():
 
     def B_ED():
         print("After taking the treasure chest, you make your way back home")
+        time.sleep(t)
         print("After that long and hard journey, you finally have something to get by wih: those 1,000 coins")
+        time.sleep(t)
         print("Finally,....")
+        time.sleep(t2)
         #add time thing
         print("You pass away due to the shortage in coins.")
+        time.sleep(t)
         print("Maybe those coins weren't enough to maintain yourself, but atleast you died knowing you achieved something, right? ")
+        time.sleep(t)
         print("Farewell, traveller.... You did an amaizing job, but all stories come to an end.")
+        time.sleep(t)
         print("END.")
 
 
@@ -372,35 +406,47 @@ def DAY_20():
 
     def FIN():
         print("Thank you for playing our game. You may not know what happened afer you got the trasure chest....")
+        time.sleep(t2)
         print("But you will achieved something in this long and hard journey.")
+        time.sleep(t)
         print("Congrats!!!")
+        time.sleep(t)
         print("FIN/ END")
     
     ###
 
 
     print("Congrats! You have made it THIS far!!!!")
+    time.sleep(t)
     print("For all your hard work, you stumble upon a treasure chest. Would you like to see the details?")
     chest_view = input()
 
 
     if chest_view == 'yes':
         print("Omg!! LOOK AT THIS!! ")
+        time.sleep(t)
         print("This treasure chest contains many gold coins!!")
+        time.sleep(t)
         print("This is worth 1000 gold coins! Can you believe it?! (...) ")
+        time.sleep(t)
         print("ANYWAYS!! This chest is similar to what you have been looking for your whole journey!")
+        time.sleep(t)
         print("Would you like to continue take this with you and end your journey right here? Or would you rather donate it to charity!? Im sure many people could use this much gold coins. The choice is yours!")
+        time.sleep(t)
         print("Type K to continue")
         CT_Game()
 
 
     elif chest_view == 'no':
         print("Are you sure you dont want to see the details?")
+        time.sleep(t)
         print("This means that you choose to leave the treasure chest alone. Untouched.")
+        time.sleep(t)
         print("(Dont worry, you will still continue on your journey.)")
         anothr_choice = input()
         if anothr_choice == 'yes':
             print('Alright, this means that you will leave this chest alone and continue on your journey.')
+            time.sleep(t)
             print('Type J to continue')
             Continue_Gmae()
         elif anothr_choice == 'no':
@@ -408,16 +454,24 @@ def DAY_20():
             choice_agn = input()
             if choice_agn == 'yes':
                 print("Okay.")
+                time.sleep(t)
                 print("Omg!! LOOK AT THIS!! ")
+                time.sleep(t)
                 print("This treasure chest contains many gold coins!!")
+                time.sleep(t)
                 print("This is worth 1000 gold coins! Can you believe it?! (...) ")
+                time.sleep(t2)
                 print("ANYWAYS!! This chest is similar to what you have been looking for your whole journey!")
+                time.sleep(t)
                 print("Would you like to continue take this with you and end your journey right here? Or would you rather donate it to charity!? Im sure many people could use this much gold coins. The choice is yours!")
+                time.sleep(t)
                 print("Type K to continue")
                 CT_Game()
             if choice_agn == 'no':
                 print('.....')
+                time.sleep(t2)
                 print('ok whatever...')
+                time.sleep(t)
                 print('Type J to continue')
                 Continue_Gmae()
             
@@ -440,6 +494,7 @@ def DAY_20():
         if ulitmate_choice == 1:
             print('')
             print("Do you want to take this treasure chest with you? Or would you like to donate it to charity?")
+            time.sleep(t)
             print("T for Treasure Chest annd C to donate to charity.")
             supr_chiice = input()
             if supr_chiice == 'T':
@@ -481,20 +536,30 @@ def DAY_20():
 
     def CHARITY_W ():
         print("OMG SO U HAVE CHSOEN TO DONATE TO CHARITY???")
+        time.sleep(t)
         print("That is so kind of you!! Lets see what your fate will be.... ")
+        time.sleep(t2)
         #add slep thing
         print(" Because you have chosen to donate to charity, the king and queen were impressed by your generosity. ")
+        time.sleep(t)
         print("As a result... they have chosen to give you 1000000 gold coins")
+        time.sleep(t)
         print("CONGRATSS YOU HAVE ACHIEVED THE BEST ENDING IN THIS GAME!!")
+        time.sleep(t)
         print("END")
 
 
     def TAKE_ALL():
         print("SO U HAVE CHOSEN TO TAKE THIS TREASURE FOR YOURSELF???")
+        time.sleep(t)
         print("That is..... interesting ")
+        time.sleep(t2)
         print("Lets see what fate has in store for you.....")
+        time.sleep(t2)
         print("You end your journey after taking the treasure chest with you")
+        time.sleep(t)
         print("You wonder what your life would be like after this...")
+        time.sleep(t2)
         print("Type N to go to the next scene or E to end it right now (You will not see the afterword)")
         scene_choice = input()
         if scene_choice == "N":
@@ -505,12 +570,18 @@ def DAY_20():
 
     def B_ED():
         print("After taking the treasure chest, you make your way back home")
+        time.sleep(t)
         print("After that long and hard journey, you finally have something to get by wih: those 1,000 coins")
+        time.sleep(t)
         print("Finally,....")
+        time.sleep(t2)
         #add time thing
         print("You pass away due to the shortage in coins.")
+        time.sleep(t)
         print("Maybe those coins weren't enough to maintain yourself, but atleast you died knowing you achieved something, right? ")
+        time.sleep(t)
         print("Farewell, traveller.... You did an amazing job, but all stories come to an end.")
+        time.sleep(t)
         print("END.")
 
 
@@ -518,8 +589,11 @@ def DAY_20():
 
     def FIN():
         print("Thank you for playing our game. You may not know what happened after you got the treasure chest....")
+        time.sleep(t2)
         print("But you will achieved something in this long and hard journey.")
+        time.sleep(t)
         print("Congrats!!!")
+        time.sleep(t)
         print("FIN/ END")
 
 
@@ -586,11 +660,15 @@ def journey():
         x = True
         while x == True:
             q = input("Would you like to continue? Y/N: ")
-            if (q=="No" or q=="N" or q=="n" or q=="no"):
+            if (q=="Yes" or q=="Y" or q=="y" or q=="yes"):
                 x = False
-                break
+                return journey()
+
 journey()
+#YAYYYY GAME FINISHED OMG UGE   finished may 31 finalyy 
 
 
 
 
+#NOTES 
+#import other files (classflies)
