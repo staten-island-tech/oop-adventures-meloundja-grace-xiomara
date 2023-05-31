@@ -7,7 +7,12 @@ time.sleep(t)
 
 
 
+   
+answer2 = input("are you ready for your first choice?")
+if answer2.lower().strip() == "yes":
+    print("Ok, you are in the land of the beginning, which is where your journey starts. Unfortunately, due to your terrible luck, you are broke. Your goal is to find the treasure hidden inside the Kingdom of benevolent falls through a bunch of decisions and some might be deemed fatal.   ")
 
+<<<<<<< HEAD
 def first_choice():  
     answer2 = input("are you ready for your first choice?")
     if answer2.lower().strip() == "yes":
@@ -20,6 +25,12 @@ def first_choice():
             if (q=="Yes" or q=="Y" or q=="yes" or q=="y"):
                 x = False
                 return first_choice()
+=======
+
+   
+else:
+    print("Oh well, farewell dear traveler")
+>>>>>>> 25fb7e326541c330a37318393c3699dfffdf617f
 
 
 
@@ -119,8 +130,8 @@ class Island(Area):
         return f"{self.name}, {self.size}, {self.travel_time}, {self.description}"
 
 
-island2 = Island('Siwan Bay', 'Large Island', '10 Days to Travel', '')
-island3 = Island('Lost Souls Springs', 'Small Island', '20 Days to Travel', '')
+island2 = Island('Siwan Bay', 'Large Island', '10 Days to Travel', 'island 2', '')
+island3 = Island('Lost Souls Springs', 'Small Island', '20 Days to Travel', 'island 3', '')
 
 
 
