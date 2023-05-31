@@ -5,6 +5,19 @@ t = 1.5
 t2 = 2.5
 time.sleep(t)
 
+print ("Welcome dear traveler")
+
+
+answer = input("Would you like to embark on this journey? (yes/no)" )
+if answer.lower().strip() == "yes":
+    print("Whoopy")
+    print("You have twenty five days to make to the Kingdom benevolent maðm, or your your treasure will forever be lost.")
+    print("Within these twenty five days, you'll be tasked with different choices in which will either get you to your destination or you will unfortunately be eliminated")
+    print('remember to read each dialogue carefully, so you do not put in the wrong choice')
+elif answer.lower().strip() == "no":
+    print('goodbye')
+
+
 
 
    
@@ -114,8 +127,8 @@ class Island(Area):
         return f"{self.name}, {self.size}, {self.travel_time}, {self.description}"
 
 
-island2 = Island('Siwan Bay', 'Large Island', '10 Days to Travel', 'island 2', '')
-island3 = Island('Lost Souls Springs', 'Small Island', '20 Days to Travel', 'island 3', '')
+island2 = Island('Siwan Bay', 'Large Island', '10 Days to Travel', '')
+island3 = Island('Lost Souls Springs', 'Small Island', '20 Days to Travel', '')
 
 
 
