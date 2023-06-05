@@ -133,37 +133,24 @@ def food_optn1():
 
 
 #Day 10
-class Area():
-    def __init__(self, name, size):
-        self.name = name
-        self.size = size
-    def __str__(self):
-        return f"{self.name}, {self.size}"
-
-
-
-
-class Island(Area):
-    def __init__(self, name, size, travel_time, description):
-        super().__init__(name, size)
-        self.travel_time = travel_time
-        self.description = description
-    def __str__(self):
-        return f"{self.name}, {self.size}, {self.travel_time}, {self.description}"
-
-
-
-
-island2 = Island('Siwan Bay', 'Large Island', '10 Days to Travel', '')
-island3 = Island('Lost Souls Springs', 'Small Island', '20 Days to Travel', '')
-
-
-
 
 
 
 def islnchoice_s():
+
+
+    
+    from Islands import Island
+    
+    island2 = Island('Siwan Bay', 'Large Island', '10 Days to Travel', '')
+    island3 = Island('Lost Souls Springs', 'Small Island', '20 Days to Travel', '')
+
+
+
     print("You are presented with these two islands to travel to. Would you like to see the information?")
+    
+
+    
     island_pick = input()
     if island_pick == 'yes':
         print(island2)
