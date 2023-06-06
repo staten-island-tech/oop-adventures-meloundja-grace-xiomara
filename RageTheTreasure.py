@@ -8,7 +8,10 @@ time.sleep(t)
 
 
 
+from islandclass import Island
 
+island2 = Island('Siwan Bay', 'Large Island', '10 Days to Travel', '')
+island3 = Island('Lost Souls Springs', 'Small Island', '20 Days to Travel', '')
 
 
 
@@ -135,16 +138,10 @@ def food_optn1():
 #Day 10
 
 
-
 def islnchoice_s():
 
 
     
-    from Islands import Island
-    
-    island2 = Island('Siwan Bay', 'Large Island', '10 Days to Travel', '')
-    island3 = Island('Lost Souls Springs', 'Small Island', '20 Days to Travel', '')
-
 
 
     print("You are presented with these two islands to travel to. Would you like to see the information?")
