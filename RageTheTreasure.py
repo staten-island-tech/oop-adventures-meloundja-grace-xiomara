@@ -13,6 +13,7 @@ time.sleep(t)
 
 name = input("what is your name?")
 
+
 def first_choice():  
     answer2 = input("are you ready for your first choice?")
     if answer2.lower().strip() == "yes":
@@ -163,7 +164,7 @@ island3 = Island('Lost Souls Springs', 'Small Island', '20 Days to Travel', '')
 
 
 def islnchoice_s():
-    print("You are presented with these two islands to travel to. Would you like to see the information?")
+    print("You are presented with these two islands to travel to. Would you like to see the information? please type in yes or no")
     island_pick = input()
     if island_pick == 'yes':
         print(island2)
@@ -181,11 +182,11 @@ def islnchoice_s():
             next_choice = input()
         else:
             print('error')
-            x = True
-        while x == True:
+            t = True
+        while t == True:
             q = input("Would you like to continue? Y/N: ")
             if (q=="Yes" or q=="Y" or q=="yes" or q=="y"):
-                x = False
+                t = False
                 return islnchoice_s()
 
 
