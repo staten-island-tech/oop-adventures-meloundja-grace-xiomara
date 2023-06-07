@@ -6,13 +6,34 @@ t = 1
 t2 = 2
 time.sleep(t)
 
+#CLASSES WOO
 
-
-from islandclass import Island
+#island class
+from islandclass import Island 
 
 island2 = Island('Siwan Bay', 'Large Island', '10 Days to Travel', '')
 island3 = Island('Lost Souls Springs', 'Small Island', '20 Days to Travel', '')
 
+#itemclass
+
+from Item import Food
+from Item import Potion
+
+food = Food("Meat", "90 Gold Coins", "(Lasts all 30 days)")
+
+potion = Potion("HPotion", "50 Gold Coins", "Hunger", "Description: A mysterious potion that appears to be able to relieve hunger. You can see a tag on it that says 'PROPERTY OF BLACK MARKET'.")
+
+
+#Character class
+
+from Characters import Merchant
+
+name = "Old Merchant"
+impression = "suspicious"
+m = Merchant(name, 0, impression)
+
+
+########
 
 
 
@@ -156,12 +177,12 @@ def islnchoice_s():
         if choice == 'yes':
             print('Alright. Make your choice now....')
             time.sleep(t)
-            print("Type anything to continue")
+            print("Type ok to continue")
             next_choice = input()
         elif choice == 'no':
             print('Alright, take some time to decide')
             time.sleep(t)
-            print("Type anything to continue")
+            print("type ok to continue")
             next_choice = input()
         else:
             print('error')
@@ -187,7 +208,7 @@ def islnchoice_s():
         if choose == 'yes':
             print('Alright. Please, make a choice now...')
             time.sleep(t)
-            print("Type anything to continue")
+            print("Type 'ok' to continue")
             next_choice = input()
         elif choose == 'no':
             print("So, would you like to see the island descriptions")
@@ -197,7 +218,7 @@ def islnchoice_s():
                 print(island3)
                 print('Make your choice now, please. Your decision awaits.')
                 time.sleep(t)
-                print("Type anything to continue")
+                print("Type 'ok' to continue")
                 next_choice = input()
             elif choose2 == 'no':
                 print("....")
@@ -238,19 +259,23 @@ def islnchoice_s():
 
 
 
+    if next_choice == "ok":
+        print("Alright, your decision awaits.")
+        time.sleep(t)
+        print("Please choose between Island 2 or Island 3. Type '2' for Island 2 and '3' for Island 3")
+    
+    else:
+        print('error')
+        x = True
+        while x == True:
+            q = input("Would you like to continue? Y/N: ")
+            if (q=="Yes" or q=="Y" or q=="yes" or q=="y"):
+                x = False
+                return islnchoice_s()
 
-
-    for i in next_choice:
-        print()
-   
-
-
-
-
-    print("Alright, your decision awaits.")
-    time.sleep(t)
-    print("Please choose between Island 2 or Island 3. Type '2' for Island 2 and '3' for Island 3")
     island_choice_omg = input()
+   
+   
     if island_choice_omg == '2':
         print("You have chosen Island 2")
         day15fnl2()
